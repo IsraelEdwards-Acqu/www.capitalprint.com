@@ -1,0 +1,50 @@
+{
+  "name": "Capitalprint",
+  "short_name": "Capitalprint",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#722f37",
+  "description": "Capitalprint offers premium printing services for all your business and personal needs.",
+  "lang": "en-US",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "name",
+      "text": "description",
+      "url": "./"
+    }
+  },
+  "categories": [ "business", "printing", "design" ],
+  "screenshots": [
+    {
+      "sizes": "1080x1920",
+      "src": "images/screenshot1.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/screenshot2.png",
+      "type": "image/png",
+      "sizes": "1080x1920"
+    }
+  ]
+}
