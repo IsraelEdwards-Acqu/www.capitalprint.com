@@ -670,8 +670,8 @@ body {
     left: 0;
     width: 100vw;
     min-height: 48px;
-    background: #0007d9;
-    color: white;
+    background: #ffffff; /* updated background to white */
+    color: black; /* updated text color for contrast against white */
     display: flex;
     align-items: center;
     justify-content: center;
