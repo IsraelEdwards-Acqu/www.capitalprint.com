@@ -115,5 +115,142 @@ code {
         height: 40px;
     }
 }
+/* === Responsive Grid & Layout Enhancements === */
+.container, .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.col, [class*="col-"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* === Typography Modernization === */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212529;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* === Card & Panel Styling === */
+.card, .panel, .box {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+    .card:hover, .panel:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+/* === Button Modernization === */
+button, .btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .btn:focus, .btn:hover {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+/* === Responsive Column Behavior === */
+@media (max-width: 768px) {
+    .col-md-6, .col-lg-4, .col-xl-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-6, .col-lg-4, .col-xl-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .container, .container-fluid {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    h1, h2, h3 {                 
+        font-size: 1.25rem;
+    }
+
+    .card, .panel {
+        margin-bottom: 1rem;
+    }
+}
+/* === Global Image Responsiveness & Performance === */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+    img:hover {
+        transform: scale(1.02);
+    }
+
+    img[loading="lazy"] {
+        opacity: 0;
+        animation: fadeIn 0.6s ease forwards;
+    }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === Image Container Support === */
+.image-container, .img-box, .img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+/* === Mobile Optimization for Images === */
+@media (max-width: 768px) {
+    img {
+        border-radius: 0.25rem;
+        box-shadow: none;
+    }
+
+    .image-container {
+        padding: 0.25rem;
+    }
+}
+
+
 
 
